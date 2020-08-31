@@ -22,6 +22,7 @@ import Ballance from "../MainScreens/Wallet/Ballance";
 import FundAccount from "../MainScreens/Wallet/FundAccount";
 import CreateProduct from "../MainScreens/Products/CreateProduct";
 import ProductList from "../MainScreens/Products/ProductList";
+import ProductManager from "../MainScreens/Products/manageProducts";
 import verifyToken from "../Partials/Authentication";
 import "./Style.css";
 import SideBarContent from "./SideBarContent";
@@ -110,6 +111,9 @@ export default class SidebarNavigation extends Component {
           </Route>{" "}
           <Route path={`${path}/products/list`}>
             <ProductList />
+          </Route>{" "}
+          <Route path={`${path}/products/manageProduct`}>
+            <ProductManager />
           </Route>{" "}
         </Switch>{" "}
       </Sidebar>

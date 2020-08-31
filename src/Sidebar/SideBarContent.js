@@ -103,7 +103,7 @@ export default class SideBarContent extends Component {
                 content="Managed Product"
                 className="subMenu"
                 onClick={() => {
-                  history.push(`${path}/products/list`);
+                  history.push(`${path}/products/manageProduct`);
                 }}
               />
               <Accordion.Content
