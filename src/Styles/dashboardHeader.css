@@ -1,6 +1,9 @@
 .d-header{
     width: 100%;
     height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 25px;
     border-bottom: solid 1px #353535;
 }
 .d-header-menu{
@@ -11,11 +14,10 @@
 }
 .d-header-menu-li{
     margin: 10px;
-    padding: 10px;
+    padding: 10px 20px;
     font-size: 16px;
-    border: solid 1px #d8d8d8;
-    color:#979696;
-    border-radius: 5px;
+    background-color:#504f4f;
+    color: #fff;
 }
 .selected{
     background-color: #979696;
@@ -23,7 +25,6 @@
 }
 .show-content{
     width: 95%;
-    margin: auto;
+    margin: 30px auto;
     border-radius: 5px;
-    border: solid 0.5px #d8d8d8;
 }

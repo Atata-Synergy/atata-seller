@@ -37,6 +37,7 @@ function ProductList() {
   return (
     <div className="product-list">
       {items.map((item) => (
+        <>
         <ListItem key={item.id} onClick={() => setModalIsOpen(true)}>
           <div className="left">
             <div className="image-container">
@@ -48,27 +49,29 @@ function ProductList() {
             Available Quantity: <span>{item.quantity}</span>
           </div>{" "}
         </ListItem>
+        
+      <Modal
+      isOpen={ModalIsOpen}
+      style={{
+        overlay: { zIndex: "1", backgroundColor: "#353535be" },
+        content: { width: "60%", margin: "auto" },
+      }}
+    >
+      <ModalHeader>
+        <p onClick={() => setModalIsOpen(false)}>X</p>
+      </ModalHeader>
+      <ModalBody>
+        <div className='image-container'>
+          <img src='/images/4.jpg'/>
+        </div>
+        <div className='details'>
+
+        </div>
+      </ModalBody>
+    </Modal>
+    </>
       ))}
 
-      <Modal
-        isOpen={ModalIsOpen}
-        style={{
-          overlay: { zIndex: "2", backgroundColor: "#353535be" },
-          content: { width: "60%", margin: "auto" },
-        }}
-      >
-        <ModalHeader>
-          <p onClick={() => setModalIsOpen(false)}>X</p>
-        </ModalHeader>
-        <ModalBody>
-          <div className='image-container'>
-            <img src='/images/4.jpg'/>
-          </div>
-          <div className='details'>
-
-          </div>
-        </ModalBody>
-      </Modal>
     </div>
   );
 }
@@ -117,7 +120,8 @@ width: 98%;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    border-bottom: solid 0.5px #d8d8d8;
+    border-radius: 5px;
+    border: solid 0.5px #d8d8d8;
     cursor: pointer;
     :hover{
       background-color:#d8d8d8;
