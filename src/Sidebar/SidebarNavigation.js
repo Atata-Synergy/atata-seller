@@ -23,6 +23,7 @@ import FundAccount from "../MainScreens/Wallet/FundAccount";
 import CreateProduct from "../MainScreens/Products/CreateProduct";
 import ProductList from "../MainScreens/Products/ProductList";
 import ProductManager from "../MainScreens/Products/manageProducts";
+import TrashedManager from "../MainScreens/Products/TrashedProduct";
 import verifyToken from "../Partials/Authentication";
 import "./Style.css";
 import SideBarContent from "./SideBarContent";
@@ -114,6 +115,9 @@ export default class SidebarNavigation extends Component {
           </Route>{" "}
           <Route path={`${path}/products/manageProduct`}>
             <ProductManager />
+          </Route>{" "}
+          <Route path={`${path}/products/trashedProduct`}>
+            <TrashedManager />
           </Route>{" "}
         </Switch>{" "}
       </Sidebar>

@@ -110,6 +110,9 @@ export default class SideBarContent extends Component {
                 active={activeIndex === 0}
                 content="Trashed Product"
                 className="subMenu"
+                onClick={() => {
+                  history.push(`${path}/products/trashedProduct`);
+                }}
               />
             </Menu.Item>
           </Accordion>
