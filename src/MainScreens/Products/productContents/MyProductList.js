@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import styles from "styled-components";
 import "../../../Styles/dashboardHeader.css";
 import Modal from "react-modal";
+import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
+
 
 
 function ProductList() {
@@ -47,6 +49,7 @@ function ProductList() {
           </div>{" "}
           <div className="right">
             Available Quantity: <span>{item.quantity}</span>
+            <DeleteOutlineIcon className='dlt-btn' />
           </div>{" "}
         </ListItem>
         
@@ -65,10 +68,12 @@ function ProductList() {
           <img src='/images/4.jpg'/>
         </div>
         <div className='details'>
+          <p></p>
 
         </div>
       </ModalBody>
     </Modal>
+    
     </>
       ))}
 
@@ -149,6 +154,12 @@ width: 98%;
         span{
           color: red;
           font-weight: bold;
+        }
+        .dlt-btn{
+          margin:0 20px;
+          :hover{
+            color: red;
+          }
         }
     }
 `;

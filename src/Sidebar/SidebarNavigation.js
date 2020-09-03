@@ -23,11 +23,15 @@ import FundAccount from "../MainScreens/Wallet/FundAccount";
 import CreateProduct from "../MainScreens/Products/CreateProduct";
 import ProductList from "../MainScreens/Products/ProductList";
 import ProductManager from "../MainScreens/Products/manageProducts";
-import TrashedManager from "../MainScreens/Products/TrashedProduct";
+import Order from "../MainScreens/Order/RecentOrder";
 import verifyToken from "../Partials/Authentication";
 import "./Style.css";
 import SideBarContent from "./SideBarContent";
 import fetchUser from "../Partials/Fetch";
+
+
+
+
 const panelStyles = {
   padding: "15px 20px",
   color: "rgb(218, 216, 216)",
@@ -116,8 +120,8 @@ export default class SidebarNavigation extends Component {
           <Route path={`${path}/products/manageProduct`}>
             <ProductManager />
           </Route>{" "}
-          <Route path={`${path}/products/trashedProduct`}>
-            <TrashedManager />
+          <Route path={`${path}/order/recent`}>
+            <Order />
           </Route>{" "}
         </Switch>{" "}
       </Sidebar>

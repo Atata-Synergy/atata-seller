@@ -14,9 +14,9 @@ class ProductList extends React.Component {
           </div>
           <Search>
             <input placeholder='Search your list...' />
-            <div className="btn">
+            <button className="btn">
             <SearchIcon className='icon'/>
-            </div>
+            </button>
           </Search>
         </div>
         <div className="show-content">

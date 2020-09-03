@@ -106,14 +106,6 @@ export default class SideBarContent extends Component {
                   history.push(`${path}/products/manageProduct`);
                 }}
               />
-              <Accordion.Content
-                active={activeIndex === 0}
-                content="Trashed Product"
-                className="subMenu"
-                onClick={() => {
-                  history.push(`${path}/products/trashedProduct`);
-                }}
-              />
             </Menu.Item>
           </Accordion>
           {/* Order */}
@@ -132,20 +124,12 @@ export default class SideBarContent extends Component {
               />
               <Accordion.Content
                 active={activeIndex === 1}
-                content=" Recent Orders"
+                content="Orders"
                 onClick={() => {
                   history.push(`${path}/order/recent`);
                   //   setEvent(4);
                 }}
                 className="subMenu"
-              />
-              <Accordion.Content
-                active={activeIndex === 1}
-                content="Order Analysis"
-                className="subMenu"
-                onClick={() => {
-                  history.push(`${path}/products/list`);
-                }}
               />
             </Menu.Item>
           </Accordion>
