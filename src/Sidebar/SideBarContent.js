@@ -150,7 +150,7 @@ export default class SideBarContent extends Component {
                 active={activeIndex === 2}
                 content=" Sent Invoices"
                 onClick={() => {
-                  history.push(`${path}/order/recent`);
+                  history.push(`${path}/sent/invoice`);
                   //   setEvent(4);
                 }}
                 className="subMenu"
@@ -160,7 +160,7 @@ export default class SideBarContent extends Component {
                 content="Received Invoices"
                 className="subMenu"
                 onClick={() => {
-                  history.push(`${path}/products/list`);
+                  history.push(`${path}/recieved/invoice`);
                 }}
               />
               <Accordion.Content

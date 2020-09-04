@@ -125,6 +125,8 @@ function ProductList() {
     },
   ];
 
+  const filter = [ {items}]
+
   return (
     <>
       {" "}
@@ -139,6 +141,7 @@ function ProductList() {
           </button>
         </Search>
       </div>
+      <Container>
       <OrderList>
         {items.map((item) => (
           <>
@@ -155,19 +158,56 @@ function ProductList() {
           </>
         ))}
       </OrderList>
+      <SideView>
+        <div className='sv-header'>
+          User
+        </div>
+        <div className='sv-body'>
+          Na me!
+        </div>
+      </SideView>
+      </Container>
     </>
   );
 }
 
+
+const Container = styles.div`
+display: flex;
+`
+
+const SideView = styles.div`
+width: 30%;
+display: flex-box;
+height: fit;
+background-color:#f8f6f6;
+
+.sv-header{
+  height: 70px;
+  margin: 5px;
+  padding: 10px;
+  background-color:#fff;
+  box-shadow: 2px 2px 5px #e0dede;
+  text-align: center;
+  font-size: 30px;
+}
+.sv-body{  
+  margin: 5px 0px;
+  padding: 10px;
+  background-color:#fff;
+  box-shadow: 2px 2px 5px #e0dede;
+}
+`
+
 const OrderList = styles.div`
 display: flex;
-width: 97%;
+width: 90%;
 margin: auto;
 flex-wrap: wrap;
 `;
 
 const Item = styles.div`
-width: 15%;
+width: 18%;
 height: 50%;
 margin: 5px;
 text-align: center;

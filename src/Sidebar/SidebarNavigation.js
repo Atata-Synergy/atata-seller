@@ -23,6 +23,8 @@ import FundAccount from "../MainScreens/Wallet/FundAccount";
 import CreateProduct from "../MainScreens/Products/CreateProduct";
 import ProductList from "../MainScreens/Products/ProductList";
 import ProductManager from "../MainScreens/Products/manageProducts";
+import SentInvoice from '../MainScreens/Invoice/sentInvoice'
+import RecievedInvoice from '../MainScreens/Invoice/recievedInvoice'
 import Order from "../MainScreens/Order/RecentOrder";
 import verifyToken from "../Partials/Authentication";
 import "./Style.css";
@@ -122,6 +124,12 @@ export default class SidebarNavigation extends Component {
           </Route>{" "}
           <Route path={`${path}/order/recent`}>
             <Order />
+          </Route>{" "}
+          <Route path={`${path}/sent/invoice`}>
+            <SentInvoice />
+          </Route>{" "}
+          <Route path={`${path}/recieved/invoice`}>
+            <RecievedInvoice />
           </Route>{" "}
         </Switch>{" "}
       </Sidebar>
