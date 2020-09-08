@@ -168,7 +168,7 @@ export default class SideBarContent extends Component {
                 content="Prepare Invoices"
                 className="subMenu"
                 onClick={() => {
-                  history.push(`${path}/products/list`);
+                  history.push(`${path}/create/invoice`);
                 }}
               />
             </Menu.Item>

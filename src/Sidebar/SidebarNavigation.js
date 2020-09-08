@@ -20,11 +20,18 @@ import ManageQuotation from "../MainScreens/Quotations/ManageQuotation";
 import MakeQuotationRequest from "../MainScreens/Quotations/MakeQuotationRequest";
 import Ballance from "../MainScreens/Wallet/Ballance";
 import FundAccount from "../MainScreens/Wallet/FundAccount";
+
+//Product
 import CreateProduct from "../MainScreens/Products/CreateProduct";
 import ProductList from "../MainScreens/Products/ProductList";
 import ProductManager from "../MainScreens/Products/manageProducts";
+
+//Invoice
 import SentInvoice from '../MainScreens/Invoice/sentInvoice'
 import RecievedInvoice from '../MainScreens/Invoice/recievedInvoice'
+import CreateInvoice from '../MainScreens/Invoice/createInvoice'
+
+//Order
 import Order from "../MainScreens/Order/RecentOrder";
 import verifyToken from "../Partials/Authentication";
 import "./Style.css";
@@ -69,7 +76,6 @@ export default class SidebarNavigation extends Component {
     this.setState({ sidebarOpen: open });
   }
 
-  // S
   async componentDidMount() {
    
   }
@@ -130,6 +136,9 @@ export default class SidebarNavigation extends Component {
           </Route>{" "}
           <Route path={`${path}/recieved/invoice`}>
             <RecievedInvoice />
+          </Route>{" "}
+          <Route path={`${path}/create/invoice`}>
+            <CreateInvoice />
           </Route>{" "}
         </Switch>{" "}
       </Sidebar>
