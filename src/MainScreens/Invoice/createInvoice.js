@@ -16,6 +16,7 @@ class CreateInvoice extends Component {
   };
 
   onChange = input => (e) => {
+    
     this.setState({
       [input]: e.target.value,
     });
@@ -23,32 +24,22 @@ class CreateInvoice extends Component {
 
 
   submitPost = (e) => {
-    if(!this.state.CustomerName || !this.state.CustomerID || !this.state.ItemID || !this.state.OrderNumber){
-      alert('All fields are required!');
-      e.preventDefault();
-    }else{
+    {!this.state.CustomerName || !this.state.CustomerID || !this.state.ItemID || !this.state.OrderNumber ?(
+      alert('All fields are required!')
+    ) : (
       this.setState({
-        postSubmitted: true
+        postSubmitted: true,
       })
+
+    )
     }
   }
   render() {
     return (
       <>
-        <div className="d-header">
-          <div className="d-header-menu">
-            <li className="d-header-menu-li">Create Invoice</li>
-          </div>
-          <Search>
-            <input placeholder="Search your Invoice list..." />
-            <button className="btn">
-              <SearchIcon className="icon" />
-            </button>
-          </Search>
-        </div>
       { !this.setState.postSubmitted ?
        ( <Form>
-          <form method="post">
+          <form target='_blank' method="post">
             <div className="form-container">
               <div className="form-label">Customer Details</div>
               <div className="form-inputs">
@@ -115,7 +106,7 @@ class CreateInvoice extends Component {
                 </div>
 
                 <div className="form-group">
-                  <button onClick={this.submitPost}className="btn">Show PDF Preview</button>
+                  <button onClick={() => this.submitPost()} className="btn">Show PDF Preview</button>
                 </div>
               </div>
             </div>

@@ -16,8 +16,6 @@ import {
 // import "rsuite/dist/styles/dark.css";
 import Dashboard from "../MainScreens/Dashboard/Dashboard";
 import CreateSeller from "../MainScreens/AuthScreens/CreateSellerContainer";
-import ManageQuotation from "../MainScreens/Quotations/ManageQuotation";
-import MakeQuotationRequest from "../MainScreens/Quotations/MakeQuotationRequest";
 import Ballance from "../MainScreens/Wallet/Ballance";
 import FundAccount from "../MainScreens/Wallet/FundAccount";
 
@@ -38,7 +36,12 @@ import "./Style.css";
 import SideBarContent from "./SideBarContent";
 import fetchUser from "../Partials/Fetch";
 
+//coming soon
+import ComingSoon from "../comingSoon";
 
+//Quotation
+import ManageQuotation from "../MainScreens/Quotations/ManageQuotation";
+import RecievedQuotes from "../MainScreens/Quotations/RecievedQuotations";
 
 
 const panelStyles = {
@@ -110,8 +113,8 @@ export default class SidebarNavigation extends Component {
           <Route path={`${path}/quotation/manage`}>
             <ManageQuotation />
           </Route>{" "}
-          <Route path={`${path}/quotation/request`}>
-            <MakeQuotationRequest />
+          <Route path={`${path}/quotation/recieved`}>
+            <RecievedQuotes />
           </Route>{" "}
           <Route path={`${path}/balance`}>
             <Ballance />
@@ -139,6 +142,9 @@ export default class SidebarNavigation extends Component {
           </Route>{" "}
           <Route path={`${path}/create/invoice`}>
             <CreateInvoice />
+          </Route>{" "}
+          <Route path={`${path}/comingsoon`}>
+            <ComingSoon />
           </Route>{" "}
         </Switch>{" "}
       </Sidebar>

@@ -2,7 +2,7 @@ import Dashboard from "../MainScreens/Dashboard/Dashboard";
 import TrackOrder from "../MainScreens/Order/TrackOrder";
 import RecentOrder from "../MainScreens/Order/RecentOrder";
 import ManageQuotation from "../MainScreens/Quotations/ManageQuotation";
-import MakeQuotationRequest from "../MainScreens/Quotations/MakeQuotationRequest";
+import RecievedQuotations from "../MainScreens/Quotations/RecievedQuotations";
 import Ballance from "../MainScreens/Wallet/Ballance";
 import FundAccount from "../MainScreens/Wallet/FundAccount";
 import CreateProduct from "../MainScreens/Products/CreateProduct";
@@ -56,7 +56,7 @@ export const authenticatedRoute = [{
     {
         path: "/quotation/request",
         sidebar: SidebarNavigation,
-        main: MakeQuotationRequest,
+        main: RecievedQuotations,
     },
     {
         path: "/wallet/ballance",

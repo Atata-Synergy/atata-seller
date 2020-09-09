@@ -181,16 +181,16 @@ export default class SideBarContent extends Component {
             <Menu.Item>
               <Accordion.Title
                 active={activeIndex === 3}
-                content="Received Quotations"
+                content="Quotations"
                 index={3}
                 onClick={this.handleClick}
                 className="menu"
               />
               <Accordion.Content
                 active={activeIndex === 3}
-                content=" Sent Quotations"
+                content="Quotations Request"
                 onClick={() => {
-                  history.push(`${path}/order/recent`);
+                  history.push(`${path}/quotation/recieved`);
                   //   setEvent(4);
                 }}
                 className="subMenu"
@@ -200,7 +200,7 @@ export default class SideBarContent extends Component {
                 content="Request for Quotations"
                 className="subMenu"
                 onClick={() => {
-                  history.push(`${path}/products/list`);
+                  history.push(`${path}/comingsoon`);
                 }}
               />
             </Menu.Item>
@@ -222,7 +222,7 @@ export default class SideBarContent extends Component {
                 active={activeIndex === 4}
                 content="Wallet Dashboard"
                 onClick={() => {
-                  history.push(`${path}/order/recent`);
+                  history.push(`${path}/comingsoon`);
                   //   setEvent(4);
                 }}
                 className="subMenu"
@@ -232,7 +232,7 @@ export default class SideBarContent extends Component {
                 content="Transaction History"
                 className="subMenu"
                 onClick={() => {
-                  history.push(`${path}/products/list`);
+                  history.push(`${path}/comingsoon`);
                 }}
               />
               <Accordion.Content
@@ -240,7 +240,7 @@ export default class SideBarContent extends Component {
                 content="Pay or Fund Account"
                 className="subMenu"
                 onClick={() => {
-                  history.push(`${path}/products/list`);
+                  history.push(`${path}/comingsoon`);
                 }}
               />
             </Menu.Item>
@@ -263,7 +263,7 @@ export default class SideBarContent extends Component {
                 active={activeIndex === 5}
                 content="ATATA Logistics "
                 onClick={() => {
-                  history.push(`${path}/order/recent`);
+                  history.push(`${path}/comingsoon`);
                   //   setEvent(4);
                 }}
                 className="subMenu"
@@ -273,7 +273,7 @@ export default class SideBarContent extends Component {
                 content="ATATA Warehouse "
                 className="subMenu"
                 onClick={() => {
-                  history.push(`${path}/products/list`);
+                  history.push(`${path}/comingsoon`);
                 }}
               />
               <Accordion.Content
@@ -281,7 +281,7 @@ export default class SideBarContent extends Component {
                 content="ATATA Insurance "
                 className="subMenu"
                 onClick={() => {
-                  history.push(`${path}/products/list`);
+                  history.push(`${path}/comingsoon`);
                 }}
               />
               <Accordion.Content
@@ -289,7 +289,7 @@ export default class SideBarContent extends Component {
                 content="ATATA Logistics "
                 className="subMenu"
                 onClick={() => {
-                  history.push(`${path}/products/list`);
+                  history.push(`${path}/comingsoon`);
                 }}
               />
               <Accordion.Content
@@ -297,7 +297,7 @@ export default class SideBarContent extends Component {
                 content="ATATA Warehouse "
                 className="subMenu"
                 onClick={() => {
-                  history.push(`${path}/products/list`);
+                  history.push(`${path}/comingsoon`);
                 }}
               />
               <Accordion.Content
@@ -305,7 +305,7 @@ export default class SideBarContent extends Component {
                 content="ATATA Insurance "
                 className="subMenu"
                 onClick={() => {
-                  history.push(`${path}/products/list`);
+                  history.push(`${path}/comingsoon`);
                 }}
               />
               <Accordion.Content
@@ -313,7 +313,7 @@ export default class SideBarContent extends Component {
                 content="ATATA SecurePay "
                 className="subMenu"
                 onClick={() => {
-                  history.push(`${path}/products/list`);
+                  history.push(`${path}/comingsoon`);
                 }}
               />
               <Accordion.Content
@@ -321,7 +321,7 @@ export default class SideBarContent extends Component {
                 content="ATATA Agents "
                 className="subMenu"
                 onClick={() => {
-                  history.push(`${path}/products/list`);
+                  history.push(`${path}/comingsoon`);
                 }}
               />
             </Menu.Item>
@@ -353,7 +353,7 @@ export default class SideBarContent extends Component {
                 active={activeIndex === 6}
                 content="Saved Cart"
                 onClick={() => {
-                  history.push(`${path}/order/recent`);
+                  history.push(`${path}/comingsoon`);
                   //   setEvent(6);
                 }}
                 className="subMenu"
@@ -363,7 +363,7 @@ export default class SideBarContent extends Component {
                 content="Wishlist"
                 className="subMenu"
                 onClick={() => {
-                  history.push(`${path}/products/list`);
+                  history.push(`${path}/comingsoon`);
                 }}
               />
               <Accordion.Content
@@ -371,7 +371,7 @@ export default class SideBarContent extends Component {
                 content="Purchase History"
                 className="subMenu"
                 onClick={() => {
-                  history.push(`${path}/products/list`);
+                  history.push(`${path}/comingsoon`);
                 }}
               />
               <Accordion.Content
@@ -379,7 +379,7 @@ export default class SideBarContent extends Component {
                 content="Pending Purchase"
                 className="subMenu"
                 onClick={() => {
-                  history.push(`${path}/products/list`);
+                  history.push(`${path}/comingsoon`);
                 }}
               />
             </Menu.Item>
@@ -401,7 +401,7 @@ export default class SideBarContent extends Component {
                 active={activeIndex === 6}
                 content="Received Quotations"
                 onClick={() => {
-                  history.push(`${path}/order/recent`);
+                  history.push(`${path}/comingsoon`);
                   //   setEvent(6);
                 }}
                 className="subMenu"
@@ -411,7 +411,7 @@ export default class SideBarContent extends Component {
                 content="Invoice"
                 className="subMenu"
                 onClick={() => {
-                  history.push(`${path}/products/list`);
+                  history.push(`${path}/comingsoon`);
                 }}
               />
             </Menu.Item>
@@ -433,7 +433,7 @@ export default class SideBarContent extends Component {
                 active={activeIndex === 6}
                 content="Billing address"
                 onClick={() => {
-                  history.push(`${path}/order/recent`);
+                  history.push(`${path}/comingsoon`);
                   //   setEvent(6);
                 }}
                 className="subMenu"
@@ -443,7 +443,7 @@ export default class SideBarContent extends Component {
                 content="Add Card"
                 className="subMenu"
                 onClick={() => {
-                  history.push(`${path}/products/list`);
+                  history.push(`${path}/comingsoon`);
                 }}
               />
             </Menu.Item>
