@@ -24,11 +24,6 @@ import CreateProduct from "../MainScreens/Products/CreateProduct";
 import ProductList from "../MainScreens/Products/ProductList";
 import ProductManager from "../MainScreens/Products/manageProducts";
 
-//Invoice
-import SentInvoice from '../MainScreens/Invoice/sentInvoice'
-import RecievedInvoice from '../MainScreens/Invoice/recievedInvoice'
-import CreateInvoice from '../MainScreens/Invoice/createInvoice'
-
 //Order
 import Order from "../MainScreens/Order/RecentOrder";
 import verifyToken from "../Partials/Authentication";
@@ -134,15 +129,7 @@ export default class SidebarNavigation extends Component {
           <Route path={`${path}/order/recent`}>
             <Order />
           </Route>{" "}
-          <Route path={`${path}/sent/invoice`}>
-            <SentInvoice />
-          </Route>{" "}
-          <Route path={`${path}/recieved/invoice`}>
-            <RecievedInvoice />
-          </Route>{" "}
-          <Route path={`${path}/create/invoice`}>
-            <CreateInvoice />
-          </Route>{" "}
+  
           <Route path={`${path}/comingsoon`}>
             <ComingSoon />
           </Route>{" "}

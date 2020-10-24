@@ -140,46 +140,6 @@ export default class SideBarContent extends Component {
           >
             <Menu.Item>
               <Accordion.Title
-                active={activeIndex === 2}
-                content="Invoices"
-                index={2}
-                onClick={this.handleClick}
-                className="menu"
-              />
-              <Accordion.Content
-                active={activeIndex === 2}
-                content=" Sent Invoices"
-                onClick={() => {
-                  history.push(`${path}/sent/invoice`);
-                  //   setEvent(4);
-                }}
-                className="subMenu"
-              />
-              <Accordion.Content
-                active={activeIndex === 2}
-                content="Received Invoices"
-                className="subMenu"
-                onClick={() => {
-                  history.push(`${path}/recieved/invoice`);
-                }}
-              />
-              <Accordion.Content
-                active={activeIndex === 2}
-                content="Prepare Invoices"
-                className="subMenu"
-                onClick={() => {
-                  history.push(`${path}/create/invoice`);
-                }}
-              />
-            </Menu.Item>
-          </Accordion>
-          <Accordion
-            as={Menu}
-            vertical
-            style={{ backgroundColor: "rgb(51, 51, 51)", color: "#fff" }}
-          >
-            <Menu.Item>
-              <Accordion.Title
                 active={activeIndex === 3}
                 content="Quotations"
                 index={3}
@@ -384,71 +344,7 @@ export default class SideBarContent extends Component {
               />
             </Menu.Item>
           </Accordion>
-          <Accordion
-            as={Menu}
-            vertical
-            style={{ backgroundColor: "rgb(51, 51, 51)", color: "#fff" }}
-          >
-            <Menu.Item>
-              <Accordion.Title
-                active={activeIndex === 6}
-                content="Quotations And Invoice"
-                index={6}
-                onClick={this.handleClick}
-                className="menu"
-              />
-              <Accordion.Content
-                active={activeIndex === 6}
-                content="Received Quotations"
-                onClick={() => {
-                  history.push(`${path}/comingsoon`);
-                  //   setEvent(6);
-                }}
-                className="subMenu"
-              />
-              <Accordion.Content
-                active={activeIndex === 6}
-                content="Invoice"
-                className="subMenu"
-                onClick={() => {
-                  history.push(`${path}/comingsoon`);
-                }}
-              />
-            </Menu.Item>
-          </Accordion>
-          <Accordion
-            as={Menu}
-            vertical
-            style={{ backgroundColor: "rgb(51, 51, 51)", color: "#fff" }}
-          >
-            <Menu.Item>
-              <Accordion.Title
-                active={activeIndex === 6}
-                content="Billing"
-                index={6}
-                onClick={this.handleClick}
-                className="menu"
-              />
-              <Accordion.Content
-                active={activeIndex === 6}
-                content="Billing address"
-                onClick={() => {
-                  history.push(`${path}/comingsoon`);
-                  //   setEvent(6);
-                }}
-                className="subMenu"
-              />
-              <Accordion.Content
-                active={activeIndex === 6}
-                content="Add Card"
-                className="subMenu"
-                onClick={() => {
-                  history.push(`${path}/comingsoon`);
-                }}
-              />
-            </Menu.Item>
-          </Accordion>
-        </Menu>
+           </Menu>
       </CustomScroll>
     );
   }
